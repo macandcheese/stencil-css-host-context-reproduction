@@ -1,0 +1,8 @@
+// this does not work in ff or safari in prod mode
+:host-context([theme="dark"]) {
+  background-color: red;
+}
+
+:host {
+  display: block;
+}

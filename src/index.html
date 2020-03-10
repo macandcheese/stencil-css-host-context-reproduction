@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/stencil-css-host-context-reproduction.esm.js"></script>
+  <script nomodule src="/build/stencil-css-host-context-reproduction.js"></script>
+
+</head>
+
+<body>
+
+  <h2>Theme: This is a custom attribute (defined in wrapping parent component)</h2>
+  <h3>In Chrome and IE, the background of each child component will be red.</h3>
+  <h3>In Safari and Firefox, it doesn't work.</h3>
+
+  <my-component theme="dark">
+    <my-child-component first="Stencil" last="'Don't call me a framework' JS"></my-child-component>
+    <my-child-component first="Stencil" last="'Don't call me a framework' JS"></my-child-component>
+    <my-child-component first="Stencil" last="'Don't call me a framework' JS"></my-child-component>
+  </my-component>
+
+</body>
+
+</html>
