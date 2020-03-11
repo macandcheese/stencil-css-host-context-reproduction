@@ -16,6 +16,7 @@ export const config: Config = {
       serviceWorker: null // disable service workers
     }
   ],
+  globalStyle: "src/assets/styles/global.scss",
   plugins: [
     sass()
   ]

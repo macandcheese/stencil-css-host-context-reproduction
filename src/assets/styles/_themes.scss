@@ -1,0 +1,9 @@
+@mixin example-light-theme () {
+  --example-global-background: #eee;
+  --example-global-text: #555;
+}
+
+@mixin example-dark-theme () {
+  --example-global-background: #222;
+  --example-global-text: #eee;
+}

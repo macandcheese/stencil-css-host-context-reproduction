@@ -5,4 +5,9 @@
 
 :host {
   display: block;
+  padding: 20px;
+  // this does not work in ie (variable set on direct parent)
+  border: 2px solid var(--example-child-border-color);
+  // this does not work in ie (variable set in global css)
+  color: var(--example-global-text);
 }

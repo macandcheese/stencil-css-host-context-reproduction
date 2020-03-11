@@ -1,4 +1,14 @@
 :host {
   display: block;
   border: 1px solid black;
+  // this does not work in ie in the child component
+  --example-child-border-color: blue;
+  // this does work in ie (variables set in global css)
+  background: var(--example-global-background);
+}
+
+
+:host .parent-title {
+  // this does work in ie (variables set in global css)
+  color: var(--example-global-text);
 }

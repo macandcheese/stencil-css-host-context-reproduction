@@ -14,7 +14,7 @@ export class MyComponent {
   render() {
     return (
       <Host>
-        <h3>The wrapping parent container</h3>
+        <h3 class="parent-title">The wrapping parent container</h3>
         <slot />
       </Host>
     );
